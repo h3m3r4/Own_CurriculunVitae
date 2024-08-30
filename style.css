@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap'); /* Gupter */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); /* Zila */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Zilla Slab", serif;
+}
+
+body
+{
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+	min-height: 100vh;
+}
+
+.container
+{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: #ffffff;
+	margin: 55px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+
+
+.container .left_Side
+{
+	position: relative;
+	background: #003147;
+	padding: 40px;
+}
+
+/* Mon profil - gauche */
+
+.profileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.profileText .imgBx
+{
+	position: relative;
+	width: 200px;
+	height: 210px;
+	border-radius: 50px;
+	border: 3px solid #03a9f4;
+	overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profileText h2
+{
+	color: #ffffff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+}
+
+.profileText h2 span
+{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.contactInfo
+{
+	padding-top: 40px;
+}
+
+.title
+{
+	width: 280px;
+	padding: 2px;
+	border-bottom: 2px solid #ffffff;
+	border-top: 2px solid #ffffff;
+	color: #ffffff;
+	margin-top: 11px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;	
+}
+
+
+.contactInfo ul
+{
+	position: relative;
+}
+
+.contactInfo ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contactInfo ul li .text
+{
+	font-size: 13px;
+}
+
+.contactInfo ul li .icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 16px;
+	color: #03a9f4;
+}
+
+.contactInfo ul li span
+{
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.contactInfo.formation li
+{
+	margin-bottom: 10px;
+}
+
+.contactInfo.formation h5
+{
+	color: #03a9f4;
+	font-size: 15px;
+}
+
+.contactInfo.formation h4:nth-of-type(2)
+{
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 300px;
+}
+
+.contactInfo.formation h4
+{
+	color: #ffffff;
+	font-weight: 700;
+
+}
+
+.technologie ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de même largeur */
+    grid-gap: 16px; 
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justif;
+    
+}
+
+.icon-container img.icons {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.icon-container span {
+    color: white; 
+    font-size: 16px; 
+    
+}
+
+.hobbie p
+{
+	width: 184px;
+	margin-top: 15px;
+	line-height: 10px;
+}
+
+.mySpan img
+{
+	background: #03a9f4;
+	width: 30px;
+	padding: 4px;
+	border-radius: 12px;
+	font-size: 20px;
+	float: left;
+	margin-right: 10px;
+}
+
+.hobbie h4 {
+    color: #03a9f4;
+    font-size: 16px;
+}
+
+.hobbie .text {
+    color: white;  
+    text-align: justify;  
+    line-height: 1.2em; 
+    font-size: 12px;
+}
+
+.contactInfo.langage .percent
+{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #081921;
+	display: block;
+	margin-top: 5px;
+}
+
+.contactInfo.langage .percent div
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+
+
+/* Mon profil - droite */
+
+.container .right_Side
+{
+	position: relative;
+	background: #ffffff;
+	padding: 40px;
+}
+
+.about-heading
+
+{
+	border-bottom: 2px solid #163853;
+	border-top: 2px solid #163853;
+	margin-top: 11px;
+	margin-bottom: 16px;
+}
+
+.about-heading i
+{
+	background: lightblue;
+	color: #003147;
+	border-radius: 17px;
+	width: 	30px;
+	padding: 6px;
+	float: left;
+	font-size: 20px;
+	margin-right: 10px;	
+}
+
+.title2
+{
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 6px;
+}
+
+.p3 
+{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.myComp {
+	text-align: justify;
+    margin-bottom: 20px;
+}
+
+.imgComp {
+    display: flex;    
+    align-items: center; 
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne suivante si l'écran est trop étroit */
+}
+
+.imgComp img {
+    width: 50px; 
+    height: auto;
+    margin: 3px; 
+}
+
+.list-comp {
+    list-style: disc outside none;
+    color: #0071BC;
+}
+
+.list-comp li {
+    display: flex; /* Flexbox pour aligner h4, images et p sur la même ligne */
+    align-items: center; 
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.list-comp li h4 {
+	display: inline; 
+    margin: 5px; 
+    color: #003147;
+}
+
+.list-comp li p {
+    display: inline; 
+    margin-top: 6px;
+    color: #000000;
+}
+
+.list-comp li img {
+    width: 60px; 
+    height: auto;
+    margin-right: 5px; 
+    display: inline-block;
+}
+
+.list-comp li h4::before {
+    content: "•"; /* Ajouter une puce avant chaque h4 */
+    color: #0071BC; /* Bleu pour les puces */
+    margin-right: 10px;
+    font-size: 1.5em; /* Taille des puces */
+}
+
+.box
+{
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.box .year_company h3
+{
+	text-transform: uppercase;
+	color: #0071BC;
+	font-size: 20px;
+}
+
+.box .text h4
+{
+	text-transform: uppercase;
+	color: #003147;
+	font-size: 16px;
+}
+
+.lr-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligner les éléments en haut pour qu'ils soient sur la même ligne */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.left {
+  flex: 1; /* Permet de garder les deux colonnes équilibrées en largeur */
+  max-width: 25%; /* Ajuste la largeur pour garder les éléments alignés */
+}
+
+.right {
+  flex: 1;
+  padding-left: 20px; /* Ajoute un peu d'espace à gauche de la colonne droite */
+}
+
+.p4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1B598E;
+  text-transform: uppercase;
+}
+
+.p5 {
+  font-size: 16px;
+  color: #000000;
+}
+
+.lr-box .left p, .lr-box .right p {
+  margin: 0; /* Supprime les marges pour l'alignement */
+}
+
+
